@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="<?php echo base_url() ?>assett/img/favicon.png" type="image/png">
-	<title>Fantasy Travel Blog</title>
+	<title>Noesantara Travel</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="<?php echo base_url() ?>assett/css/bootstrap.css">
 	<link rel="stylesheet" href="<?php echo base_url() ?>assett/vendors/linericon/style.css">
@@ -30,7 +30,7 @@
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<a class="navbar-brand logo_h" href="index.html">
-						<img src="<?php echo base_url() ?>assett/img/logo.png" alt="">
+						<img src="<?php echo base_url() ?>assett/img/logo2.png" alt="">
 					</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,28 +42,43 @@
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav justify-content-center mx-auto">
 							<li class="nav-item">
-								<a class="nav-link" href="index.html">Home</a>
+								<a class="nav-link" href="<?php echo site_url() ?>">Home</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="category.html">Category</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="archive.html">Archive</a>
-							</li>
-							<li class="nav-item submenu dropdown active">
+							<!-- <li class="nav-item submenu dropdown active">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Pages</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item">
-										<a class="nav-link" href="elements.html">Elements</a>
+										<a class="nav-link" href="elements.html">Culture</a>
 									</li>
 									<li class="nav-item">
 										<a class="nav-link" href="single-blog.html">Post Details</a>
 									</li>
 								</ul>
+							</li> -->
+							<li class="nav-item">
+								<a class="nav-link" href="<?php echo site_url() ?>Destinations">Destinations</a>
+							</li>					
+							<li class="nav-item">
+								<a class="nav-link" href="<?php echo site_url() ?>Cultures">Cultures</a>
+							</li>					
+							<li class="nav-item">
+								<a class="nav-link" href="<?php echo site_url() ?>ArtCrafts">Arts and Crafts</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="contact.html">Contact</a>
+								<a class="nav-link" href="<?php echo site_url() ?>FloraFauna">Flora and Fauna</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="<?php echo site_url() ?>Adventures">Adventures</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="<?php echo site_url() ?>Culinaries">Culinaries</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="<?php echo site_url() ?>News">News</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="<?php echo site_url() ?>About">About</a>
 							</li>
 						</ul>
 						<ul class="nav navbar-nav ml-auto search">
@@ -162,5 +177,5 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> 
 	<!--================ End Home Banner Area =================-->
