@@ -8,8 +8,8 @@ class Culinaries extends CI_Controller {
 		/*$usan = $this->session->userdata('nama');
 		$kue = $this->M_login->hak_ak($usan); 
 		$query_tampil_tahun = $this->M_dokumen->tampil_tahun(); */
-		$query = $this->M_dokumen->listAll_kuliner();
-		$qpopular_post = $this->M_dokumen->getpopularpost();
+		$query = $this->M_dokumen->listAll_kuliner(); 
+		$qpopular_post = $this->M_dokumen->getpopularpost2();
 		$dataHalaman = array(  
 			'query'=>$query,
 			'qpopular_post'=>$qpopular_post

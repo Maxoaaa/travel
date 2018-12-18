@@ -5,15 +5,15 @@
                               $deskripsi = $namaass->deskripsi;
                             }?>
                     <div class="blog_right_sidebar">
-                        <aside class="single_sidebar_widget search_widget">
+                        <!-- <aside class="single_sidebar_widget search_widget">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Search Posts">
                                 <span class="input-group-btn">
                                     <button class="btn btn-default" type="button"><i class="lnr lnr-magnifier"></i></button>
                                 </span>
-                            </div><!-- /input-group -->
+                            </div><!-- /input-group -
                             <div class="br"></div>
-                        </aside>
+                        </aside> -->
                         <aside class="single_sidebar_widget author_widget">
                             <img class="author_img img-fluid" src="<?php echo base_url() ?>assett/img/blog/author.png" alt="">
                             <h4><?php  
@@ -91,8 +91,8 @@
                                  //exit();
                             ?>
                                 <li>
-                                    <a href="<?php echo site_url(). $row->nama_kategori; ?>" class="d-flex justify-content-between">
-                                        <p><?php echo $row->nama_kategori; ?></p> 
+                                    <a href="<?php echo site_url(). $row->kategori; ?>" class="d-flex justify-content-between">
+                                        <p><?php echo $row->kategori; ?></p> 
                                         <p><?php echo $row->total_post; ?></p>
                                     </a>
                                 </li>

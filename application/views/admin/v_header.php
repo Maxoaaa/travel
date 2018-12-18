@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="<?php echo base_url() ?>assetadmin/bower_components/jvectormap/jquery-jvectormap.css"> 
   <link rel="stylesheet" href="<?php echo base_url() ?>assetadmin/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
   <link rel="stylesheet" href="<?php echo base_url() ?>assetadmin/bower_components/bootstrap-daterangepicker/daterangepicker.css"> -->
+  <link rel="stylesheet" href="<?php echo base_url() ?>assetadmin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">  
   <link rel="stylesheet" href="<?php echo base_url() ?>assetadmin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
@@ -24,7 +25,7 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="<?php echo site_url() ?>" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>Noe</b>T</span>
       <!-- logo for regular state and mobile devices -->
@@ -40,7 +41,7 @@
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
           <!-- Messages: style can be found in dropdown.less-->
-          <li class="dropdown messages-menu">
+<!--           <li class="dropdown messages-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-envelope-o"></i>
               <span class="label label-success">4</span>
@@ -48,9 +49,9 @@
             <ul class="dropdown-menu">
               <li class="header">You have 4 messages</li>
               <li>
-                <!-- inner menu: contains the actual data -->
+                <!-- inner menu: contains the actual data --
                 <ul class="menu">
-                  <li><!-- start message -->
+                  <li><!-- start message --
                     <a href="#">
                       <div class="pull-left">
                         <img src="<?php echo base_url() ?>assetadmin/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
@@ -62,7 +63,7 @@
                       <p>Why not buy a new awesome theme?</p>
                     </a>
                   </li>
-                  <!-- end message -->
+                  <!-- end message --
                   <li>
                     <a href="#">
                       <div class="pull-left">
@@ -116,7 +117,7 @@
               <li class="footer"><a href="#">See All Messages</a></li>
             </ul>
           </li>
-          <!-- Notifications: style can be found in dropdown.less -->
+          !-- Notifications: style can be found in dropdown.less --
           <li class="dropdown notifications-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-bell-o"></i>
@@ -125,7 +126,7 @@
             <ul class="dropdown-menu">
               <li class="header">You have 10 notifications</li>
               <li>
-                <!-- inner menu: contains the actual data -->
+                <!-- inner menu: contains the actual data --
                 <ul class="menu">
                   <li>
                     <a href="#">
@@ -158,7 +159,7 @@
               <li class="footer"><a href="#">View all</a></li>
             </ul>
           </li>
-          <!-- Tasks: style can be found in dropdown.less -->
+          !-- Tasks: style can be found in dropdown.less --
           <li class="dropdown tasks-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-flag-o"></i>
@@ -167,9 +168,9 @@
             <ul class="dropdown-menu">
               <li class="header">You have 9 tasks</li>
               <li>
-                <!-- inner menu: contains the actual data -->
+                <!-- inner menu: contains the actual data --
                 <ul class="menu">
-                  <li><!-- Task item -->
+                  <li><!-- Task item --
                     <a href="#">
                       <h3>
                         Design some buttons
@@ -183,8 +184,8 @@
                       </div>
                     </a>
                   </li>
-                  <!-- end task item -->
-                  <li><!-- Task item -->
+                  <!-- end task item --
+                  <li><!-- Task item --
                     <a href="#">
                       <h3>
                         Create a nice theme
@@ -198,8 +199,8 @@
                       </div>
                     </a>
                   </li>
-                  <!-- end task item -->
-                  <li><!-- Task item -->
+                  <!-- end task item --
+                  <li><!-- Task item --
                     <a href="#">
                       <h3>
                         Some task I need to do
@@ -213,8 +214,8 @@
                       </div>
                     </a>
                   </li>
-                  <!-- end task item -->
-                  <li><!-- Task item -->
+                  <!-- end task item --
+                  <li><!-- Task item --
                     <a href="#">
                       <h3>
                         Make beautiful transitions
@@ -228,14 +229,15 @@
                       </div>
                     </a>
                   </li>
-                  <!-- end task item -->
+                  <!-- end task item --
                 </ul>
               </li>
               <li class="footer">
                 <a href="#">View all tasks</a>
               </li>
             </ul>
-          </li>
+          </li>-->
+
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -261,11 +263,11 @@
                   </div>
                   <div class="col-xs-4 text-center">
                     <a href="#">Posts</a>
-                    <br>343
+                    <br><?php echo $this->db->count_all('t_post') ?>
                   </div>
                   <div class="col-xs-4 text-center">
                     <a href="#">Members</a>
-                    <br>9
+                    <br><?php echo $this->db->count_all('t_login') ?>
                   </div>
                 </div>
                 <!-- /.row -->
@@ -280,11 +282,11 @@
                 </div>
               </li>
             </ul>
-          </li>
+          </li> 
           <!-- Control Sidebar Toggle Button -->
-          <li>
+          <!-- <li>
             <a href="#"><i class="fa fa-gears"></i></a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </nav>
@@ -304,7 +306,7 @@
         </div>
       </div>
       <!-- search form -->
-      <form action="#" method="get" class="sidebar-form">
+      <!-- <form action="#" method="get" class="sidebar-form">
         <div class="input-group">
           <input type="text" name="q" class="form-control" placeholder="Search...">
           <span class="input-group-btn">
@@ -312,52 +314,31 @@
                 </button>
               </span>
         </div>
-      </form>
+      </form> -->
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">MAIN NAVIGATION</li>
-        <li class="active treeview">
-          <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-            <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="pages/widgets.html">
-            <i class="fa fa-th"></i> <span>Widgets</span>
-            <span class="pull-right-container">
+        <li class="header">MAIN NAVIGATION</li>       
+        <li class="">
+          <a href="<?php echo site_url() ?>dashboard">
+            <i class="fa fa-dashboard"></i> <span>Post</span>
+           <!--  <span class="pull-right-container">
               <small class="label pull-right bg-green">new</small>
-            </span>
+            </span> -->
           </a>
         </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-laptop"></i>
-            <span>UI Elements</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
+        <li class="">
+          <a href="<?php echo site_url() ?>admin/Tambah">
+            <i class="fa fa-plus"></i> <span>Tambah Post</span>
+           <!--  <span class="pull-right-container">
+              <small class="label pull-right bg-green">new</small>
+            </span> -->
           </a>
-          <ul class="treeview-menu">
-            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
-            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
-            <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
-            <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
-            <li><a href="pages/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
-            <li><a href="pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
-          </ul>
         </li>
-        <li class="header">LABELS</li>
+        <!-- <li class="header">LABELS</li>
         <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
         <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li> -->
       </ul>
     </section>
     <!-- /.sidebar -->

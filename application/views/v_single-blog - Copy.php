@@ -5,25 +5,11 @@
                 <div class="col-lg-8">
                     <?php                        
                         foreach($query as $row){
-                           $queryw = $this->db->query("SELECT * FROM t_post");
-                            $idku = $row->id;                          
-                            $rowo = $queryw->row_array(($row->id)-1);   
-                           // $rowo = $queryw->next_row();                     
-                        //print_r($idku);
-                        //print_r($rowo);
-                        /*$cekk = $this->db->query("SELECT * FROM t_post WHERE id='".$idku++."'")->num_rows();  
-                            print_r($idku);
-                            print_r($cekk);
-                            exit();
-                        while ($cekk == 0) {
-                            $next_idku = $idku +1;
-                            $cekk = $this->db->query("SELECT * FROM t_post WHERE id='".$next_idku."'")->num_rows();  
-                            print_r($cekk);
-                        }*/
+                        $idku = $row->id;       
+                        $cek = $this->db->query("SELECT * FROM t_post WHERE id='".$idku."'")->num_rows();  
+                        $prev_idku = $idku -1;$next_idku = $idku +1;
                         /*echo $prev_idku;
                         exit();*/
-                       $next_idku = $idku +1;
-                        $prev_idku = $idku -1;
                         if ($prev_idku ==0) {
                             $prev_idku =1;
                         }

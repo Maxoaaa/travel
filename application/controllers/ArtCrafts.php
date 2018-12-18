@@ -5,10 +5,10 @@ class ArtCrafts extends CI_Controller {
 
 	public function index()
 	{
-		$query = $this->M_dokumen->listAll_kuliner();
-		$qpopular_post = $this->M_dokumen->getpopularpost();
+		$query = $this->M_dokumen->listAll_artcraft();
+		$qpopular_post = $this->M_dokumen->getpopularpost2();
 		$dataHalaman = array(  
-			'query'=>$query,
+			'query'=>$query, 
 			'qpopular_post'=>$qpopular_post
         );
 		$this->load->view('v_header',$dataHalaman);

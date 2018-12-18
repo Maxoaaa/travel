@@ -65,9 +65,9 @@
 							<li class="nav-item">
 								<a class="nav-link" href="<?php echo site_url() ?>ArtCrafts">Arts and Crafts</a>
 							</li>
-							<li class="nav-item">
+							<!-- <li class="nav-item">
 								<a class="nav-link" href="<?php echo site_url() ?>FloraFauna">Flora and Fauna</a>
-							</li>
+							</li> -->
 							<li class="nav-item">
 								<a class="nav-link" href="<?php echo site_url() ?>Adventures">Adventures</a>
 							</li>
@@ -81,7 +81,7 @@
 								<a class="nav-link" href="<?php echo site_url() ?>About">About</a>
 							</li>
 						</ul>
-						<ul class="nav navbar-nav ml-auto search">
+						<!-- <ul class="nav navbar-nav ml-auto search">
 								<li class="nav-item d-flex align-items-center mr-10">
 									<div class="menu-form">
 										<form>
@@ -94,7 +94,7 @@
 										<i class="lnr lnr-magnifier"></i>
 									</button>
 								</li>
-							</ul>
+							</ul> -->
 					</div>
 				</div>
 			</nav>
@@ -113,7 +113,7 @@
 							<div class="blog_text_slider">
 								<div class="blog_text">
 									<img class="img-fluid" src="<?php echo base_url() ?>assett/img/banner/banner-img.png" alt="">
-									<div class="blog-meta bottom d-flex justify-content-between align-items-center flex-wrap">
+									<!-- <div class="blog-meta bottom d-flex justify-content-between align-items-center flex-wrap">
 										<div class="meta">
 											<span class="icon fa fa-calendar"></span> March 14, 2018
 											<span class="icon fa fa-comments"></span> 05
@@ -121,7 +121,7 @@
 										<div>
 											<a class="read_more" href="#">Read More</a>
 										</div>
-									</div>
+									</div> -->
 								</div>
 							</div>
 						</div>
@@ -129,14 +129,14 @@
 				</div>
 			</div>
 
-			<div class="slide-item owl-lazy" data-src="<?php echo base_url() ?>assett/img/banner/home-banner2.jpg">
+			<div class="slide-item owl-lazy" data-src="<?php echo base_url() ?>assett/img/banner/home-banner.jpg">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-5"></div>
 						<div class="col-lg-7">
 							<div class="blog_text_slider">
 								<div class="blog_text">
-									<img class="img-fluid" src="<?php echo base_url() ?>assett/img/banner/banner-img2.png" alt="">
+									<img class="img-fluid" src="<?php echo base_url() ?>assett/img/banner/banner-img2.png" alt=""><!-- 
 									<div class="blog-meta bottom d-flex justify-content-between align-items-center flex-wrap">
 										<div class="meta">
 											<span class="icon fa fa-calendar"></span> March 14, 2018
@@ -145,7 +145,7 @@
 										<div>
 											<a class="read_more" href="#">Read More</a>
 										</div>
-									</div>
+									</div> -->
 								</div>
 							</div>
 						</div>
@@ -153,14 +153,14 @@
 				</div>
 			</div>
 
-			<div class="slide-item owl-lazy" data-src="<?php echo base_url() ?>assett/img/banner/home-banner3.jpg">
+			<div class="slide-item owl-lazy" data-src="<?php echo base_url() ?>assett/img/banner/home-banner.jpg">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-5"></div>
 						<div class="col-lg-7">
 							<div class="blog_text_slider">
 								<div class="blog_text">
-									<img class="img-fluid" src="<?php echo base_url() ?>assett/img/banner/banner-img3.png" alt="">
+									<img class="img-fluid" src="<?php echo base_url() ?>assett/img/banner/banner-img3.png" alt=""><!-- 
 									<div class="blog-meta bottom d-flex justify-content-between align-items-center flex-wrap">
 										<div class="meta">
 											<span class="icon fa fa-calendar"></span> March 14, 2018
@@ -169,7 +169,7 @@
 										<div>
 											<a class="read_more" href="#">Read More</a>
 										</div>
-									</div>
+									</div> -->
 								</div>
 							</div>
 						</div>

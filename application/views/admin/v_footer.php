@@ -26,9 +26,27 @@
 <script src="<?php echo base_url() ?>assetadmin/bower_components/fastclick/lib/fastclick.js"></script>
  -->
 <script src="<?php echo base_url() ?>assetadmin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<script src="<?php echo base_url() ?>assetadmin/bower_components/ckeditor/ckeditor.js"></script>
+<script src="<?php echo base_url() ?>assetadmin/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="<?php echo base_url() ?>assetadmin/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 <script src="<?php echo base_url() ?>assetadmin/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="<?php echo base_url() ?>assetadmin/bower_components/fastclick/lib/fastclick.js"></script>
 <script src="<?php echo base_url() ?>assetadmin/dist/js/adminlte.min.js"></script>
 <script src="<?php echo base_url() ?>assetadmin/dist/js/pages/dashboard.js"></script>
 <script src="<?php echo base_url() ?>assetadmin/dist/js/demo.js"></script>
+<script>
+  $(function () {
+
+    $('#example1').DataTable({      
+      'columnDefs': [
+            { width: '7%', targets: 5 },
+            { width: '6%', targets: 6 }          
+        ]
+    })    
+    CKEDITOR.replace('editor2')
+    $('.textarea').wysihtml5()
+    
+  })
+</script>
 </body>
 </html>

@@ -3,151 +3,38 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="single_travel wow fadeInUp" data-wow-duration="1s">
-								<figure>
-									<img class="img-fluid w-100" src="<?php echo site_url() ?>assett/img/category/c1.jpg" alt="">
-								</figure>
-								<div class="overlay"></div>
-								<div class="text-wrap">
-									<h3>
-										<a href="#">Waterfall Travel</a>
-									</h3>
-									<div class="blog-meta white d-flex justify-content-between align-items-center flex-wrap">
-										<div class="meta">
-											<a href="#">
-												<span class="icon fa fa-calendar"></span> March 14, 2018
-												<span class="icon fa fa-comments"></span> 05
-											</a>
-										</div>
-										<div>
-											<a class="read_more" href="#">Read More</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+					<div class="row">	
+					<?php
+                        $no = 1; 
+                        foreach($query as $row){                   
+                        ?>
 						<div class="col-lg-6 col-md-6 col-sm-12">
-							<div class="single_travel wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+							<div class="single_travel wow fadeInUp" data-wow-duration="<?php echo $no++;?>s" data-wow-delay="1s">
 								<figure>
-									<img class="img-fluid w-100" src="<?php echo site_url() ?>assett/img/category/c2.jpg" alt="">
+									<img class="img-fluid w-100" src="<?php echo base_url() ?>assett/img/culinaries/<?php echo $row->url_image; ?>" alt="">
 								</figure>
 								<div class="overlay"></div>
 								<div class="text-wrap">
 									<h3>
-										<a href="#">Waterfall Travel</a>
+										<a href="<?php echo site_url(); ?>Content/index/<?php echo $row->id; ?>"><?php echo $row->judul; ?></a>
 									</h3>
 									<div class="blog-meta white d-flex justify-content-between align-items-center flex-wrap">
 										<div class="meta">
-											<a href="#">
-												<span class="icon fa fa-calendar"></span> March 14, 2018
-												<span class="icon fa fa-comments"></span> 05
+											<a href="<?php echo site_url(); ?>Content/index/<?php echo $row->id; ?>">
+												<span class="icon fa fa-calendar"></span> <?php echo $row->created_at; ?>
+												<!-- <span class="icon fa fa-comments"></span> 05 -->
 											</a>
 										</div>
 										<div>
-											<a class="read_more" href="#">Read More</a>
+											<a class="read_more" href="<?php echo site_url(); ?>Content/index/<?php echo $row->id; ?>">Read More</a>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<div class="single_travel wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-								<figure>
-									<img class="img-fluid w-100" src="<?php echo site_url() ?>assett/img/category/c3.jpg" alt="">
-								</figure>
-								<div class="overlay"></div>
-								<div class="text-wrap">
-									<h3>
-										<a href="#">Waterfall Travel</a>
-									</h3>
-									<div class="blog-meta white d-flex justify-content-between align-items-center flex-wrap">
-										<div class="meta">
-											<a href="#">
-												<span class="icon fa fa-calendar"></span> March 14, 2018
-												<span class="icon fa fa-comments"></span> 05
-											</a>
-										</div>
-										<div>
-											<a class="read_more" href="#">Read More</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="single_travel wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-								<figure>
-									<img class="img-fluid w-100" src="<?php echo site_url() ?>assett/img/category/c4.jpg" alt="">
-								</figure>
-								<div class="overlay"></div>
-								<div class="text-wrap">
-									<h3>
-										<a href="#">Waterfall Travel</a>
-									</h3>
-									<div class="blog-meta white d-flex justify-content-between align-items-center flex-wrap">
-										<div class="meta">
-											<a href="#">
-												<span class="icon fa fa-calendar"></span> March 14, 2018
-												<span class="icon fa fa-comments"></span> 05
-											</a>
-										</div>
-										<div>
-											<a class="read_more" href="#">Read More</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<div class="single_travel wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
-								<figure>
-									<img class="img-fluid w-100" src="<?php echo site_url() ?>assett/img/category/c5.jpg" alt="">
-								</figure>
-								<div class="overlay"></div>
-								<div class="text-wrap">
-									<h3>
-										<a href="#">Waterfall Travel</a>
-									</h3>
-									<div class="blog-meta white d-flex justify-content-between align-items-center flex-wrap">
-										<div class="meta">
-											<a href="#">
-												<span class="icon fa fa-calendar"></span> March 14, 2018
-												<span class="icon fa fa-comments"></span> 05
-											</a>
-										</div>
-										<div>
-											<a class="read_more" href="#">Read More</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<div class="single_travel wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
-								<figure>
-									<img class="img-fluid w-100" src="<?php echo site_url() ?>assett/img/category/c6.jpg" alt="">
-								</figure>
-								<div class="overlay"></div>
-								<div class="text-wrap">
-									<h3>
-										<a href="#">Waterfall Travel</a>
-									</h3>
-									<div class="blog-meta white d-flex justify-content-between align-items-center flex-wrap">
-										<div class="meta">
-											<a href="#">
-												<span class="icon fa fa-calendar"></span> March 14, 2018
-												<span class="icon fa fa-comments"></span> 05
-											</a>
-										</div>
-										<div>
-											<a class="read_more" href="#">Read More</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+						<?php
+                         }
+                        ?>
 					</div>
 
 					<div class="row">

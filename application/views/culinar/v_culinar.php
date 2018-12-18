@@ -7,36 +7,35 @@
 						<?php
                         $no = 1; 
                         foreach($query as $row){                   
-                        ?> 
+                        ?>  
 						<div class="col-lg-6 col-md-6 col-sm-12">
-							<div class="single_travel wow fadeInUp" data-wow-duration="1s">
+							<div class="single_travel wow fadeInUp" data-wow-duration="<?php echo $no++;?>s">
 								<figure>
 									<img class="img-fluid w-100" src="<?php echo base_url() ?>assett/img/culinaries/<?php echo $row->url_image; ?>" alt="">
 								</figure>
 								<div class="overlay"></div>
 								<div class="text-wrap">
 									<h3>
-										<a href="<?php echo site_url(); ?>Content/index/<?php echo $row->id; ?>/C"><?php echo $row->judul; ?></a>
+										<a href="<?php echo site_url(); ?>Content/index/<?php echo $row->id; ?>"><?php echo $row->judul; ?></a>
 									</h3>
 									<div class="blog-meta white d-flex justify-content-between align-items-center flex-wrap">
 										<div class="meta">
-											<a href="<?php echo site_url(); ?>Content/index/<?php echo $row->id; ?>/C">
+											<a href="<?php echo site_url(); ?>Content/index/<?php echo $row->id; ?>">
 												<span class="icon fa fa-calendar"></span> <?php echo $row->created_at; ?>
 												<!-- <span class="icon fa fa-comments"></span> 05 -->
 											</a>
 										</div>
 										<div>
-											<a class="read_more" href="<?php echo site_url(); ?>Content/index/<?php echo $row->id; ?>/C">Read More</a>
+											<a class="read_more" href="<?php echo site_url(); ?>Content/index/<?php echo $row->id; ?>">Read More</a>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						
-					
+						</div>					
 					<?php
                          }
-                        ?></div>
+                        ?>
+                    </div>
 
 					<div class="row">
 						<div class="col-lg-12">
